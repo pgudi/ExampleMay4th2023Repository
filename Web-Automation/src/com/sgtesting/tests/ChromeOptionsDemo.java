@@ -1,23 +1,25 @@
 package com.sgtesting.tests;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-public class ChromeBrowserDemo {
+public class ChromeOptionsDemo {
 	public static WebDriver oBrowser=null;
 	public static void main(String[] args) {
 		launchBrowser();
 		navigate();
-		closeApplication();
 	}
 	
 	private static void launchBrowser()
 	{
 		try
 		{
-			oBrowser=new ChromeDriver();
-		}catch (Exception e) 
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			options.addArguments("--start-maximized");
+			oBrowser=new ChromeDriver(options);
+		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -27,24 +29,12 @@ public class ChromeBrowserDemo {
 	{
 		try
 		{
-			oBrowser.get("http://localhost/login.do");
+			oBrowser.get("https://www.axisbank.com/");
 			Thread.sleep(5000);
-		}catch (Exception e) 
+		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 	}
 
-	private static void closeApplication()
-	{
-		try
-		{
-			oBrowser.close();
-		}catch (Exception e) 
-		{
-			e.printStackTrace();
-		}
-	}
-	
-	
 }
