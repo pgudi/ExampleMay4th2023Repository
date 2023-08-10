@@ -1,0 +1,13 @@
+{
+  "address": "Attiguppe, Vijayanagar",
+  "createdAt": "2023-08-10T02:29:43.938Z",
+  "emailId": "demo@gmail.com",
+  "firstName": "Demo",
+  "id": 0,
+  "lastName": "User1",
+  "phoneNumber": "9080706050",
+  "stateName": "Karnataka",
+  "updatedAt": "2023-08-10T02:29:43.938Z",
+  "userRole": "QA Automation",
+  "zipcode": 560021
+}

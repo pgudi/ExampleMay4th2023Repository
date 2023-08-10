@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2138" started-at="2023-08-10T08:18:06 IST" finished-at="2023-08-10T08:18:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2138" started-at="2023-08-10T08:18:06 IST" finished-at="2023-08-10T08:18:08 IST">
+      <class name="com.sgtesting.tests.users.Users">
+        <test-method status="PASS" signature="createUser()[pri:1, instance:com.sgtesting.tests.users.Users@17579e0f]" name="createUser" duration-ms="1870" started-at="2023-08-10T08:18:06 IST" finished-at="2023-08-10T08:18:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="displayUser()[pri:2, instance:com.sgtesting.tests.users.Users@17579e0f]" name="displayUser" duration-ms="116" started-at="2023-08-10T08:18:08 IST" finished-at="2023-08-10T08:18:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayUser -->
+        <test-method status="PASS" signature="deleteUser()[pri:3, instance:com.sgtesting.tests.users.Users@17579e0f]" name="deleteUser" duration-ms="108" started-at="2023-08-10T08:18:08 IST" finished-at="2023-08-10T08:18:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.sgtesting.tests.users.Users -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
