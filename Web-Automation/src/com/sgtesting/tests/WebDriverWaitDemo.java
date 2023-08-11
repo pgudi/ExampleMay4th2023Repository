@@ -34,13 +34,19 @@ public class WebDriverWaitDemo {
 		{
 			oBrowser.navigate().refresh();
 			oBrowser.get("http://localhost/login.do");
-			WebDriverWait wait=new WebDriverWait(oBrowser, Duration.ofSeconds(30));
-			wait.until(ExpectedConditions.attributeContains(By.id("username"), "placeholder", "Username"));
+			
 		}catch (Exception e) 
 		{
 			e.printStackTrace();
 		}
 	}
+	
+	public static void waitForTitle(String title)
+	{
+		WebDriverWait wait=new WebDriverWait(oBrowser, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.titleContains(title));
+	}
+	
 	
 	private static void login()
 	{
